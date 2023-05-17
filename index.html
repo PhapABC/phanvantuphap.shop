@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="stylesheet" href="css/nullstyle.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/media.css">
+	
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:regular,600,700,800&display=swap" rel="stylesheet">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- google font -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- fontawesom -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" />
+
+    <!-- aos anomate css -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- Custom css -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
+
+
+
+	<title>Food&Dinner</title>
+</head>
+<body>
+	<header class="header">
+		<div class="containers">
+			<nav class="navbar navbar-expand-lg fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href="#">F&D</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"><i class="fas fa-bars"></i></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#service">Services</a>
+                        </li>
+                        
+                        <li class="nav-item">
+                            <a class="nav-link" href="#blogs">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">Contact</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex">
+                        <input class="form-control me-2" id="myinput" type="text" placeholder="Search"
+                            aria-label="Search">
+              
+
+                    </form>
+                    
+                   
+                </div>
+            </div>
+            <!-- The Modal -->
+			            <button id="cart">
+			                <i class="fa fa-shopping-basket" aria-hidden="true"></i>
+			                Cart
+			            </button>
+			            <div id="myModal" class="modal">
+			                <div class="modal-content">
+			                    <div class="modal-header">
+			                        <h5 class="modal-title">Giỏ Hàng</h5>
+			                        <span class="close">&times;</span>
+			                    </div>
+			                    <div class="modal-body">
+			                    	<div class="modal-body">
+                                        <div class="cart-items">
+                      
+			                        <div class="cart-row">
+                            <span class="cart-item cart-header cart-column">Sản Phẩm</span>
+                            <span class="cart-price cart-header cart-column">Giá</span>
+                            <span class="cart-quantity cart-header cart-column">Số Lượng</span>
+                        </div>
+                   
+                        
+			                        
+			                        
+			                    </div>
+
+			                    <div class="modal-footer">
+			                    	
+			                        <button type="button" class="btn btn-secondary close-footer">Đóng</button>
+			                        <button type="button" class="btn btn-primary order">Thanh Toán</button>
+			                    </div>
+			                </div>
+			            </div>
+			        </div>
+			    </div>
+
+			          <button id="carts" style="margin-right:10px ;">
+			                <i class="fa-regular fa-user" aria-hidden="true"></i>
+			                Login
+			            </button>
+			            <div id="myModal1" class="modal">
+			                <div class="modal-content">
+			                    <div class="modal-header">
+			                        <h5 class="modal-title">Login</h5>
+			                        <span  class="close1">&times;</span>
+			                    </div>
+			                    <div class="modal-body">
+			                    	<div class="modal-body">
+                        <div class="cart-rows">
+                            <div class="mb-3">
+						    <label for="exampleInputEmail1" class="form-label">Email address</label>
+						    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+						    <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+						  </div>
+						  <div class="mb-3">
+						    <label for="exampleInputPassword1" class="form-label">Password</label>
+						    <input type="password" class="form-control" id="exampleInputPassword1">
+						  </div>
+						  <div class="mb-3 form-check">
+						    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+						    <label class="form-check-label" for="exampleCheck1">Check me out</label>
+						  </div>
+                        </div>
+                      
+			                        
+			                        
+			                        
+			                    </div>
+
+			                    
+			                        <button type="button" class="btn btn-secondary close-footer1">Back</button>
+			                        <button type="button" class="btn btn-primary order1">Sign In</button>
+			                      
+			                    </div>
+			                </div>
+			            </div>
+			                
+			        
+        </nav>
+    </div>
+		</header>
+	<div class="wrapper">
+		
+		
+
+		<main class="main">
+
+			<section class="home">
+				<div class="container">
+					<div class="home__inner">
+						<div class="home__items">
+							<h1 class="home__title">Enjoy Healthy & Tasty Food</h1>
+							<div class="home__subtext">About Me:</div>
+							<p class="home__text">Name: <a>Phan Văn Từ Pháp</a></p>
+							<p class="home__text">Class: <a>22260106 - TK Wed</a></p>
+							<p class="home__text">Student Code:  <a>2001216015</a></p>
+							<p class="home__text" style="padding-bottom: 30px;">Instructors: Đinh Nguyễn Trọng Nghĩa <a></a></p>
+							
+							
+							
+							<div class="home__button">
+								<a href="#" class="home__link" >Explore Menu</a>
+							</div>
+						</div>
+						<div class="home__image">
+							<img src="img/home/home-man.png" alt="home img" class="home__img">
+							<div class="home-eat__img">
+								<img src="img/home/home-eat.png" alt="" class="home-eat__img">
+								<img src="img/home/home-eat1.png" alt="" class="home-eat__img">
+								<img src="img/home/home-eat2.png" alt="" class="home-eat__img">
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<div class="service">
+				<div class="container">
+					<div class="service__inner">
+
+						<div class="service__item">
+							<div class="service__image">
+								<img src="img/service/s-phone.png" alt="service" class="service__img">
+							</div>
+							<h3 class="service-item__title">Shopping Online</h3>
+						</div>
+
+						<div class="service__item">
+							<div class="service__image">
+								<img src="img/service/s-scooter.png" alt="service" class="service__img">
+							</div>
+							<h3 class="service-item__title">Delivery Service</h3>
+						</div>
+
+						<div class="service__item">
+							<div class="service__image">
+								<img src="img/service/s-box.png" alt="service" class="service__img">
+							</div>
+							<h3 class="service-item__title">Hand Delivery</h3>
+						</div>
+
+					</div>
+				</div>
+			</div>
+			<section class="dishes">
+				<div class="container">
+					<h2 class="dishes__title">Món Ăn Phổ Biến</h2>
+					<div class="dishes__inner">
+						<div class="dishes__tab">
+							<button class="dishes__tab-btn" type="button" data-tab="#breakfast">Breakfast</button>
+							<button class="dishes__tab-btn" type="button" data-tab="#lunch">Lunch</button>
+							<button class="dishes__tab-btn" type="button" data-tab="#dinner">Dinner</button>
+						</div>
+						<div class="dishes__content">
+
+							<div class="dishes__body" id="breakfast">
+
+								<a class="dishes__item">
+									<div class="dishes__price">30000đ</div>
+									<div class="dishes__image">
+										<img src="img/dishes/dishes-eat1.png" alt="dishes eat" class="dishes__img" >
+									</div>
+									<h3 class="dishes__item--title">Khoai Tây</h3>
+									<div class="add btnss">
+									<button type="button" class="btn btn-cart">Add Cart</button>
+								</div>
+									<div class="dishes__block--time">
+										<div class="dishes__block--clock">
+											<img src="img/dishes/clock.svg" alt="clock" class="dishes__block--clock-img">
+											<div class="dishes--clock--text">25 Min Away</div>
+										</div>
+										<div class="dishes__block--people">
+											<img src="img/dishes/people.png" alt="people" class="dishes__block--people-img">
+										</div>
+									</div>
+								</a>
+
+								<a class="dishes__item">
+									<div class="dishes__price">45000đ</div>
+									<div class="dishes__image">
+										<img src="img/dishes/dishes-eat2.png" alt="dishes eat" class="dishes__img" >
+									</div>
+									<h3 class="dishes__item--title">Thịt Kho</h3>
+									<div class="add btnss"><button type="button" class="btn btn-cart">Add Cart</button></div>
+									<div class="dishes__block--time">
+										<div class="dishes__block--clock">
+											<img src="img/dishes/clock.svg" alt="clock" class="dishes__block--clock-img">
+											<div class="dishes--clock--text">45 Min Away</div>
+										</div>
+										<div class="dishes__block--people">
+											<img src="img/dishes/people.png" alt="people" class="dishes__block--people-img">
+										</div>
+									</div>
+								</a>
+
+								<a class="dishes__item">
+									<div class="dishes__price">40000đ</div>
+									<div class="dishes__image">
+										<img src="img/dishes/dishes-eat3.png" alt="dishes eat" class="dishes__img" >
+									</div>
+									<h3 class="dishes__item--title">Cơm Chân Châu</h3>
+									<div class="add btnss"><button type="button" class="btn btn-cart">Add Card</button></div>
+									<div class="dishes__block--time">
+										<div class="dishes__block--clock">
+											<img src="img/dishes/clock.svg" alt="clock" class="dishes__block--clock-img">
+											<div class="dishes--clock--text">1 Hour Away</div>
+										</div>
+										<div class="dishes__block--people">
+											<img src="img/dishes/people.png" alt="people" class="dishes__block--people-img">
+										</div>
+									</div>
+								</a>
+
+							</div>
+
+							<div class="dishes__body" id="lunch">
+
+								<a class="dishes__item">
+									<div class="dishes__price">40000đ</div>
+									<div class="dishes__image">
+										<img src="img/phobo.jpg" alt="dishes eat" class="dishes__img"style="border-radius: 100%;width: 320px;height: 320px;" >
+									</div>
+									<h3 class="dishes__item--title">Phở Bò Gân</h3>
+									<div class="add btnss">
+									<button type="button" class="btn btn-cart">Add Cart</button></div>
+									<div class="dishes__block--time">
+										<div class="dishes__block--clock">
+											<img src="img/dishes/clock.svg" alt="clock" class="dishes__block--clock-img">
+											<div class="dishes--clock--text">1 Hour Away</div>
+										</div>
+										<div class="dishes__block--people">
+											<img src="img/dishes/people.png" alt="people" class="dishes__block--people-img">
+										</div>
+									</div>
+								</a>
+
+								<a class="dishes__item">
+									<div class="dishes__price">40000đ</div>
+									<div class="dishes__image">
+										<img src="img/dishes/dishes-eat1.png" alt="dishes eat" class="dishes__img">
+									</div>
+									<h3 class="dishes__item--title">Sốt Khoai Tây</h3>
+									<div class="add btnss"><button type="button" class="btn btn-cart">Add Cart</button></div>
+									<div class="dishes__block--time">
+										<div class="dishes__block--clock">
+											<img src="img/dishes/clock.svg" alt="clock" class="dishes__block--clock-img">
+											<div class="dishes--clock--text">25 Min Away</div>
+										</div>
+										<div class="dishes__block--people">
+											<img src="img/dishes/people.png" alt="people" class="dishes__block--people-img">
+										</div>
+									</div>
+								</a>
+
+								<a class="dishes__item">
+									<div class="dishes__price">60000đ</div>
+									<div class="dishes__image">
+										<img src="img/dishes/dishes-eat2.png" alt="dishes eat" class="dishes__img">
+									</div>
+									<h3 class="dishes__item--title">Cơm Thịt Kho</h3>
+									<div class="add btnss">
+									<button type="button" class="btn btn-cart">Add Cart</button></div>
+									<div class="dishes__block--time">
+										<div class="dishes__block--clock">
+											<img src="img/dishes/clock.svg" alt="clock" class="dishes__block--clock-img">
+											<div class="dishes--clock--text">45 Min Away</div>
+										</div>
+										<div class="dishes__block--people">
+											<img src="img/dishes/people.png" alt="people" class="dishes__block--people-img">
+										</div>
+									</div>
+								</a>
+
+							</div>
+
+							<div class="dishes__body" id="dinner">
+								<a  class="dishes__item">
+									<div class="dishes__price">30000đ</div>
+									<div class="dishes__image">
+										<img src="img/cf.jpg" alt="dishes eat" class="dishes__img" style="border-radius: 100%;width: 350px;height: 350px;">
+									</div>
+									<h3 class="dishes__item--title">Cafe Machiato</h3>
+									<div class="add btnss">
+									<button type="button" class="btn btn-cart">Add Cart</button>
+								</div>
+									<div class="dishes__block--time">
+										<div class="dishes__block--clock">
+											<img src="img/dishes/clock.svg" alt="clock" class="dishes__block--clock-img">
+											<div class="dishes--clock--text">25 Min Away</div>
+										</div>
+										<div class="dishes__block--people">
+											<img src="img/dishes/people.png" alt="people" class="dishes__block--people-img">
+										</div>
+									</div>
+								</a>
+
+								<a class="dishes__item">
+									<div class="dishes__price">20000đ</div>
+									<div class="dishes__image">
+										<img src="img/pessi.jpeg" alt="dishes eat" class="dishes__img"style="border-radius: 100%;width: 350px;height: 350px;" >
+									</div>
+									<h3 class="dishes__item--title">Pessi</h3>
+									<div class="add btnss"><button type="button" class="btn btn-cart">Add Cart</button></div>
+									<div class="dishes__block--time">
+										<div class="dishes__block--clock">
+											<img src="img/dishes/clock.svg" alt="clock" class="dishes__block--clock-img">
+											<div class="dishes--clock--text">1 Hour Away</div>
+										</div>
+										<div class="dishes__block--people">
+											<img src="img/dishes/people.png" alt="people" class="dishes__block--people-img">
+										</div>
+									</div>
+								</a>
+
+								<a class="dishes__item">
+									<div class="dishes__price">25000đ</div>
+									<div class="dishes__image">
+										<img src="img/cam.jpg" alt="dishes eat" class="dishes__img" style="border-radius: 100%;width: 350px;height: 350px;">
+									</div>
+									<h3 class="dishes__item--title">Orange </h3>
+									<div class="add btnss"><button type="button" class="btn btn-cart">Add Cart</button></div>
+									<div class="dishes__block--time">
+										<div class="dishes__block--clock">
+											<img src="img/dishes/clock.svg" alt="clock" class="dishes__block--clock-img">
+											<div class="dishes--clock--text">45 Min Away</div>
+										</div>
+										<div class="dishes__block--people">
+											<img src="img/dishes/people.png" alt="people" class="dishes__block--people-img">
+										</div>
+									</div>
+								</a>
+							
+	
+							
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="serving">
+				<div class="container">
+					<h2 class="dishes__title">Tiêu Chí Của Nhà Hàng</h2>
+					<div class="serving__inner">
+						<div class="serving__image">
+							<img src="img/serving/serving.png" alt="serving" class="serving__img">
+						</div>
+						<div class="serving__items">
+							<h2 class="serving__title">Đảm Bảo Nguồn Thực Phẩm Sạch, An Toàn</h2>
+							<p class="serving__text">Lựa chọn nguồn nguyên liệu luôn là ưu tiên hàng đâu của nhà hàng chúng tôi. Chúng tôi cam kết sẽ mang đến những món ăn tuyệt vời nhất.</p>
+							<a href="#" class="serving__link btn">Learn About Us</a>
+						</div>
+					</div>
+				</div>
+			</section>
+						<section class="serving">
+				<div class="container">
+					<div class="serving__inner">
+						
+						<div class="serving__items">
+							<h2 class="serving__title">Đầu Bếp Với Tay Nghề Hàng Đầu Thế Giới</h2>
+							<p class="serving__text">Tiêu chí tuyển chọn đầu bếp của chúng tôi rất khắc khe để tuyển chọn được những đầu bếp giỏi trên khác các nước. Chúng tôi sẽ phục vụ quý khác các món ăn với hương vị đậm đà nhất.</p>
+							<a href="#" class="serving__link btn">Learn About Us</a>
+						</div>
+						<div class="serving__image">
+							<img src="img/serving/serving.png" alt="serving" class="serving__img">
+						</div>
+					</div>
+				</div>
+			</section>
+						<section class="serving">
+				<div class="container">
+					<div class="serving__inner">
+						<div class="serving__image">
+							<img src="img/serving/serving.png" alt="serving" class="serving__img">
+						</div>
+						<div class="serving__items">
+							<h2 class="serving__title">Thái Độ Phục Vụ Chuyên Nghiệp</h2>
+							<p class="serving__text">Khi đến với cửa hàng của chúng tôi quý khác sẽ được nhân viên tư vấn hết sức nhiệt tình đảm bảo sự hài lòng của quý khách</p>
+							<a href="#" class="serving__link btn">Learn About Us</a>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="food">
+				<div class="container">
+					<div class="food__inner">
+						<h2 class="food__title">Chúng Tôi Cung Cấp<br>Nhiều Loại Mặt Hàng</h2>
+
+						<div class="food__row">
+							
+							<div class="food__column">
+								<div class="food__item">
+									<div class="food__item--image">
+										<img src="img/food/food1.png" alt="" class="food__item--img">
+									</div>
+									<div class="food__item--block">
+										<div class="food__item--like">
+											<img src="img/food/star.png" alt="" class="food__item--like-img">
+											<div class="food__item--like-text">300+ Items Availble</div>
+										</div>
+										<h3 class="food__item--title">Hải Sản</h3>
+										<p class="food__item--text">Thực tế chứng minh từ lâu là người đọc sẽ bị phân tâm bởi nội dung có thể đọc được của một trang khi nhìn vào bố cục của nó</p>
+									</div>
+								</div>
+							</div>
+
+							<div class="food__column">
+								<div class="food__item">
+									<div class="food__item--image">
+										<img src="img/food/food2.png" alt="" class="food__item--img">
+									</div>
+									<div class="food__item--block">
+										<div class="food__item--like">
+											<img src="img/food/star.png" alt="" class="food__item--like-img">
+											<div class="food__item--like-text">140+ Items Availble</div>
+										</div>
+										<h3 class="food__item--title">Đặc Sản Các Vùng</h3>
+										<p class="food__item--text">Thực tế chứng minh từ lâu là người đọc sẽ bị phân tâm bởi nội dung có thể đọc được của một trang khi nhìn vào bố cục của nó</p>
+									</div>
+								</div>
+							</div>
+
+							<div class="food__column">
+								<div class="food__item">
+									<div class="food__item--image">
+										<img src="img/food/food3.png" alt="" class="food__item--img">
+									</div>
+									<div class="food__item--block">
+										<div class="food__item--like">
+											<img src="img/food/star.png" alt="" class="food__item--like-img">
+											<div class="food__item--like-text">200+ Items Availble</div>
+										</div>
+										<h3 class="food__item--title">Thức Ăn Nhanh</h3>
+										<p class="food__item--text">Thực tế chứng minh từ lâu là người đọc sẽ bị phân tâm bởi nội dung có thể đọc được của một trang khi nhìn vào bố cục của nó</p>
+									</div>
+								</div>
+							</div>
+
+							<div class="food__column">
+								<div class="food__item">
+									<div class="food__item--image">
+										<img src="img/food/food2.png" alt="" class="food__item--img">
+									</div>
+									<div class="food__item--block">
+										<div class="food__item--like">
+											<img src="img/food/star.png" alt="" class="food__item--like-img">
+											<div class="food__item--like-text">140+ Items Availble</div>
+										</div>
+										<h3 class="food__item--title">Món Ăn Bình Dân</h3>
+										<p class="food__item--text">Thực tế chứng minh từ lâu là người đọc sẽ bị phân tâm bởi nội dung có thể đọc được của một trang khi nhìn vào bố cục của nó</p>
+									</div>
+								</div>
+							</div>
+
+						</div>
+
+					</div>
+				</div>
+			</section>
+
+			<section class="discont">
+				<div class="container">
+					<div class="discont__inner">
+						<div class="discont__item">
+							<h2 class="discont__title">Giảm tới <span>50%</span> cho các mặt hàng đã chọn</h2>
+							<p class="discont__text">Khuyến mãi chỉ dành cho khách hàng mua Online tại trang chủ của chúng tôi.</p>
+							<div class="discont__button">
+								<a href="#" class="discont__link">All Discount Item</a>
+								<a href="#" class="discont__link discont__link--white">View All Menu</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			
+
+			<section class="app">
+				<div class="container">
+					<div class="app__inner">
+						<div class="app__item">
+							<h2 class="app__title">Cách dễ nhất để lấy thức ăn của bạn bằng ứng dụng của chúng tôi</h2>
+							<a href="#" class="app__link btns">Download now</a>
+						</div>
+						<div class="app__image">
+							<img src="img/app/app.png" alt="app" class="app__img">
+						</div>
+					</div>
+				</div>
+			</section>
+
+		</main>
+
+		<footer class="footer">
+			<div class="container">
+
+				<div class="footer__body">
+
+					<div class="footer__block">
+						<a href="index.html" class="footer__logo" style="text-decoration: none;">
+							<span>Food&Dinner</span>.com
+						</a>
+						<p class="footer__text">
+							Công ty được thành lập bởi sinh viên của trường HUFI trong dự án môn học TK-Wed.
+						</p>
+						<div class="footer__social">
+							<a href="#" class="social__link">
+								<div class="social__image">
+									<img src="img/footer/fb.svg" alt="social" class="social__img">
+								</div>
+							</a>
+							<a href="#" class="social__link">
+								<div class="social__image">
+									<img src="img/footer/in.svg" alt="social" class="social__img">
+								</div>
+							</a>
+							<a href="#" class="social__link">
+								<div class="social__image">
+									<img src="img/footer/tw.svg" alt="social" class="social__img">
+								</div>
+							</a>
+							<a href="#" class="social__link">
+								<div class="social__image">
+									<img src="img/footer/yt.svg" alt="social" class="social__img">
+								</div>
+							</a>
+						</div>
+					</div>
+
+					<div class="footer__menu">
+
+						<div class="footer__item">
+							<h4 class="footer__item--title">Menu</h4>
+							<ul class="footer__menu--list">
+								<li class="footer__menu--item">
+									<a href="#" class="footer__menu--link">Breakfast</a>
+								</li>
+								<li class="footer__menu--item">
+									<a href="#" class="footer__menu--link">Lunch</a>
+								</li>
+								<li class="footer__menu--item">
+									<a href="#" class="footer__menu--link">Dinner</a>
+								</li>
+							</ul>
+						</div>
+
+						<div class="footer__item">
+							<h4 class="footer__item--title">Liên Kết</h4>
+							<ul class="footer__menu--list">
+								<li class="footer__menu--item">
+									<a href="" class="footer__menu--link">Điều khoản</a>
+								</li>
+								<li class="footer__menu--item">
+									<a href="#" class="footer__menu--link">Dịch vụ</a>
+								</li>
+								<li class="footer__menu--item">
+									<a href="#" class="footer__menu--link">Thanh toán & Thuế</a>
+								</li>
+								<li class="footer__menu--item">
+									<a href="#" class="footer__menu--link">Hổ trợ</a>
+								</li>
+								<li class="footer__menu--item">
+									<a href="#" class="footer__menu--link">Chính sách hoàn trả</a>
+								</li>
+							</ul>
+						</div>
+
+						<div class="footer__item">
+							<h4 class="footer__item--title">Thông Tin</h4>
+							<ul class="footer__menu--list">
+								<li class="footer__menu--item">
+									<a href="#" class="footer__menu--link">Cập nhật</a>
+								</li>
+								<li class="footer__menu--item">
+									<form class="footer__item--input">
+										<input class="item--input" type="email" name="email" placeholder="Email Address...">
+										<button class="input__btn" type="submit">
+											<img src="img/footer/arrow.svg" alt="send" class="input__img">
+										</button>
+									</form>
+								</li>
+								<li class="footer__menu--item">
+									<div class="footer__menu--item-text">Phương thức thanh toán</div>
+								</li>
+								<li class="footer__menu--item">
+									<img src="img/footer/cart.png" alt="cart" class="cart__img">
+								</li>
+							</ul>
+						</div>
+
+					</div>
+
+				</div>
+			</div>
+		</footer>
+
+	</div>
+
+	<script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+	<script src="js/slick.min.js"></script>
+	<script src="js/script.js"></script>
+	<script src="js/script1.js"></script>
+	<script src="js/script2.js"></script>
+</body>
+</html>
